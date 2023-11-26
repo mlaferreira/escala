@@ -1,0 +1,511 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    border-spacing: border-box;
+    outline: 0;
+    background-color: #f6f9ff;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('../img/bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    
+   
+}
+.top,
+.conteudo{
+    max-width: calc(75em - 40px);
+    padding: 20px;
+    margin: 0 auto;   
+    box-shadow: 0 0 10px rgb(0, 0, 0, .3);
+   
+   
+}
+
+
+.top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../img/bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.infor_user{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    flex-wrap: wrap;
+    padding: 20px 30px;
+    gap: 10px;
+}
+
+.infor_user i{
+    font-size: 3rem;
+    color: rgb(10, 126, 188);
+}
+.infor_user .infor_user_thamb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    outline: 2px solid rgb(10, 126, 188);
+    object-fit: cover;
+}
+.infor_user .infor_user_thamb img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.infor_user_title{
+    font-size: .987em;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    
+}
+.infor_user_link_perfil{
+    color: rgb(10, 126, 188);
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+}
+.infor_user_post_gradu_mat{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    border-top: 2px solid #a8abab;
+    padding: 5px;
+}
+.infor_user_post_gradu_mat p{
+    font-size: 1.2rem;
+    color: rgb(187, 37, 7);
+    text-transform: uppercase;
+}
+.infor_user_matricula{
+    font-size: .9em;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: rgb(1, 54, 83);
+}
+.form_campo{
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 2px solid #a8abab;     
+}
+.form_campo .form_input{
+    flex-basis: 100%;
+    margin-bottom: 20px;
+    
+}
+.form_campo .form_input p{
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #333;
+}
+.form_campo .form_input p span{
+    color: rgb(114, 7, 7);
+    font-size: 1.2em;
+
+}
+.form_campo .form_input input{
+    width: calc(100% - 20px);
+    padding: 10px;   
+    outline: none;
+    border: 1px solid #dfdddd;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #999;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.form_campo .form_input input[type=submit]{
+    display: inline-block;
+    width: 100%;
+    background-color: rgb(10, 126, 188);
+    border: none;
+    color: #eee;
+    font-size: 1.2em;
+    cursor: pointer;
+    
+}
+.content-btn-cancelar{
+    text-align: center;
+    
+
+}
+.btn-cancelar{
+    width: fit-content;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 30px;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 1em;
+    background-color: #333;   
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.btn-cancelar:hover{
+    background-color: #910707;
+}
+.totalidade-somatorio{   
+    max-width: 100%;
+    min-height: 100px;   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+
+}
+.consquista-meta{
+    position: relative;
+    width: 100%;
+    margin-bottom: 40px;
+    border: 1px solid #007bff;
+    padding: 20px;
+    
+}
+.valor-meta{
+    position: absolute;
+    left: 10px;
+    top: -15px;
+    padding: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+}
+.consquista-meta p{  
+    font-size: 1.2rem;
+    color: #066b0a;
+}
+.consquista-meta p b{
+    color: #910707;
+    font-size: 1.5rem;
+}
+
+
+.totalidade{
+   
+    margin-top: 30px;
+    position: relative;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;       
+}
+.totalidade p{
+    
+    display: inline-block;
+    padding: 20px 20px 20px 10px;    
+    color: #05650d;
+    font-weight: bold;
+    font-size: 5rem;
+    max-width: 100%;
+    min-height: 20px;
+    border: 2px solid #910707;
+    text-align: center;
+    margin-left: -3px;
+    margin-right: -5px;
+    margin-bottom: 10px;
+    
+    
+}
+.somatorio{    
+    position: relative;
+    border: 2px solid #910707;
+    border-radius: 8px;
+    max-width:100%;
+    display: flex;    
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px;
+    margin-bottom: 15px;
+   
+    
+}
+.somatorio p{
+    flex: 1;  
+    font-size: .657rem;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 9px;    
+    outline: 1px solid #ea4646;
+    margin: 5px;
+    line-height: 22px;
+   
+    
+}
+.somatorio strong{
+    color: #910707;
+    font-size: .987rem;
+}
+.legenda{
+    top: -18px;
+    left: -3px;
+    position: absolute;
+    background-color: #910707;
+    color: #eee;
+    font-size: .668rem;
+    padding: 5px 7px;
+   
+    
+}
+
+.rel-lista-dados{    
+    max-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    
+}
+.card_op{
+    flex-basis: calc(300px - 20px);
+    max-width: 350px;
+    height: auto;    
+    padding: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, .3);
+    margin-bottom: 30px;
+}
+.text{
+    display: none;
+}
+.card_op p{
+    color: #000;
+    font-size: .8em;
+    font-weight: bolder;
+    text-transform: uppercase;
+    line-height: 2;
+}
+.card_op p span{
+    color: #000;
+    font-weight: normal;
+}
+
+.card_op-meta p{
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: .6rem;
+    border-bottom: 2px solid #910707;
+}
+.card_op-meta p span{
+    object-fit: cover;
+    font-size: 1rem;
+    color:#fff;
+    font-weight: bold;
+    margin-left: 5px;
+    background-color: #007bff;
+    padding: 3px 5px;
+    border-radius: 3px;
+}
+.card_op .VT{
+    color: #0cbbb2;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 10px 30px;
+    font-weight: bolder;
+    
+}
+.card_op-areceber{
+    outline: 2px solid #910707;
+    
+}
+.card_op-pago{
+    outline: 2px solid #037a03;
+    opacity: .6;
+    position: relative;
+    
+}
+.card_op-pago .text{
+    display: block;
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    left: 0;
+    display: block;   
+    width: 100%;
+    height: auto;
+    text-align: center;   
+    z-index: 1000; 
+    background-color: transparent;
+}
+.card_op-pago .text p{
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    background-color: #037a03;
+    
+}
+.circulo{    
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: .5rem;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+}
+.circulo_dias{
+    display: inline-flex;
+}
+.circulo_dias{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #037a03;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 30px;
+    text-align: center;
+}
+.circulo_dias_atual{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #910707;
+    color: #fff;
+    font-weight: bold;
+    line-height: 30px;
+    text-align: center;
+    animation: pulse 1s infinite; /* Aplica a animação */
+}
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.3); }
+    100% { transform: scale(1); }
+  }
+.card_op{
+    position: relative;
+}
+.card_op_tirar{
+    position: absolute;
+    bottom: 60px;
+    left: 50px;
+    right: 0;
+    background-color: #910707;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1rem;
+    padding: 5px;    
+    width: fit-content;
+    text-align: center;
+    animation: pulse 2s infinite; /* Aplica a animação */
+    z-index: 100;
+    
+    
+}
+.links{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    margin-top: 10px;
+    
+}
+.links a{
+    display: block;
+    padding: 10px 15px;    
+    color: #fff;
+    font-size: .9em;
+    border-radius: 10px;
+    text-decoration: none;   
+}
+.links a:nth-child(1){
+    margin-right: 5px;
+    background-color: rgba(13, 164, 10, 0.8);
+    transition: .3s;
+    border: 1px solid transparent;   
+}
+.links a:hover:nth-child(1){
+    margin-right: 5px;  
+    outline: 1px solid rgba(13, 164, 10, 0.8);  
+    background-color: transparent;
+    color: rgba(5, 94, 3);
+}
+.links a:nth-child(2){
+    margin-left: 5px;
+    background-color: rgb(210, 14, 66, .8);
+    transition: .3s;
+}
+.links a:hover:nth-child(2){
+    margin-left: 5px;
+    background-color: transparent;
+    outline: 1px solid rgb(210, 14, 66, .8);   
+    color: #910707;
+   
+}
+hr{
+    width:100%;
+    margin: 10px auto; 
+}
+/* Estilizando o campo select */
+select {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  /* Estilizando a seta do campo select */
+  select::-ms-expand {
+    display: none; /* Removendo a seta do Internet Explorer */
+  }
+  
+  /* Estilizando a seta do campo select em navegadores modernos */
+  select::after {
+    content: "\25BC"; /* Unicode da seta para baixo */
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+  
+  /* Estilizando a borda quando o campo select estiver focado */
+  select:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  /* Estilizando as opções do campo select */
+  select option {
+    padding: 5px;
+  }
+  
+  /* Estilizando o fundo do campo select quando o menu de opções é exibido */
+  select:valid {
+    background-color: #f0f0f0;
+  }
+  

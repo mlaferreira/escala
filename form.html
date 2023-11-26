@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário para Inserir Detalhes de Escala</title>
+    <!-- Inclua o link para o arquivo CSS do Bootstrap (opcional) -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Formulário para Inserir Detalhes de Escala</h1>
+        <form action="processo.php" method="POST">
+            <div class="form-group">
+                <label for="escala_id">ID da Escala:</label>
+                <input type="text" class="form-control" id="escala_id" name="escala_id" required>
+            </div>
+
+            <div class="form-group">
+                <label for="mes">Mês:</label>
+                <input type="text" class="form-control" id="mes" name="mes" required>
+            </div>
+
+            <div class="form-group">
+                <label for="dias">Dias (separados por vírgulas):</label>
+                <input type="text" class="form-control" id="dias" name="dias" required>
+            </div>
+
+            <div class="form-group">
+                <label for="hora">Hora:</label>
+                <input type="text" class="form-control" id="hora" name="hora" required>
+            </div>
+
+            <div class="form-group">
+                <label for="valor">Valor do Serviço:</label>
+                <input type="text" class="form-control" id="valor" name="valor" required>
+            </div>
+
+            <div class="form-group">
+                <label for="total">Valor Total (calculado automaticamente):</label>
+                <input type="text" class="form-control" id="total" name="total" readonly>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Inserir Detalhe de Escala</button>
+        </form>
+    </div>
+
+    <!-- Inclua o link para os arquivos JavaScript do Bootstrap (opcional) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
